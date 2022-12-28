@@ -1,6 +1,5 @@
 use std::fs;
 use std::io;
-use std::io::Read;
 
 fn main() {
     std::process::exit(decode_file());
