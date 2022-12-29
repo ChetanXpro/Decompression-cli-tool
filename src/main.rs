@@ -24,8 +24,6 @@ fn decode_file() -> i32 {
         println!("{:#?}", i);
         let mut file = archive.by_index(i).unwrap();
 
-        // println!("{:#?}", file[i]);
-
         let outpath = match file.enclosed_name() {
             Some(path) => path.to_owned(),
             None => continue,
